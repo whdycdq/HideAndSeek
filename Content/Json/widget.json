@@ -1,0 +1,20 @@
+{
+    "Widget": [
+        {
+            "Type": "Chat",
+            "Location": "/Game/UI/UI_Chat.UI_Chat_C"
+        },
+        {
+            "Type": "ChatChild",
+            "Location": "/Game/UI/UI_ChatChild.UI_ChatChild_C"
+        },
+        {
+            "Type": "Menu",
+            "Location": "/Game/UI/UI_Settings.UI_Settings_C"
+        },
+        {
+            "Type": "Login",
+            "Location": "/Game/UI/UI_Login.UI_Login_C"
+        }
+    ]
+}

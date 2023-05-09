@@ -1,0 +1,31 @@
+{
+    "Character": [
+        {
+            "Type": 0,
+            "Location": "/Game/NewBlueprint.NewBlueprint_C"
+        },
+        {
+            "Type": 1,
+            "Location": "/Game/NewBlueprint.NewBlueprint_C"
+        },
+        {
+            "Type": 2,
+            "Location": "/Game/NewBlueprint.NewBlueprint_C"
+        }
+    ],
+
+    "Pawn": [
+        {
+            "Type": 0,
+            "Location": "/Game/NewBlueprint.NewBlueprint_C"
+        },
+        {
+            "Type": 1,
+            "Location": "/Game/NewBlueprint.NewBlueprint_C"
+        },
+        {
+            "Type": 2,
+            "Location": "/Game/NewBlueprint.NewBlueprint_C"
+        }
+    ]
+}
