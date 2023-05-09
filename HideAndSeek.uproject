@@ -1,0 +1,29 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "{6224EABE-42DB-469B-5B36-CE894C39E6DD}",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "HideAndSeek",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Engine",
+				"TcpSocketPlugin",
+				"CoreUObject",
+				"UMG"
+			]
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "WebBrowserWidget",
+			"Enabled": true
+		},
+		{
+			"Name": "WebAuth",
+			"Enabled": true
+		}
+	]
+}

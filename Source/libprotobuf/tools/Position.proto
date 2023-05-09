@@ -1,0 +1,74 @@
+syntax = "proto3";
+package Player;
+message SyncPlayerToken{
+	string Token=1;
+}
+
+message SyncPlayerInfo{
+	SyncPlayerToken Token=1;
+	int32 Pid=2;
+	string Name=3;
+	int32 CharacterType=4;
+}
+
+message PlayerChat{
+	int32 type=1;
+	repeated int32 pid=2;
+	string Chat=3;
+}
+
+message RayIntersect{
+	Location Origin=1;
+	Location Direction=2;
+	string Actor=3;
+}
+
+//玩家位置
+message Location{
+	float X=1;
+	float Y=2;
+	float Z=3;
+}
+
+message Rotation{
+	float Roll=1;
+	float Pitch=2;
+	float Yaw=3;
+}
+
+message Scale{
+	float X=1;
+	float Y=2;
+	float Z=3;
+}
+
+message ControllerRotation{
+	float Roll=1;
+	float Pitch=2;
+	float Yaw=3;
+}
+
+message Transform{
+	Location L=1;
+	Rotation R=2;
+	Scale S=3;
+}
+
+message Axis{
+	float MoveForward=1;
+	float MoveRight=2;
+}
+
+message PlayerMovementInfo{
+ 	Axis InputAxis=1;
+	Transform Trans=2;
+	ControllerRotation CRotation=3;
+}
+
+//玩家广播数据
+message BroadCast{
+	SyncPlayerInfo Token=1; 
+    int32 Content=2;
+    PlayerMovementInfo Info=3;
+	int32 ActionData=4;
+}
